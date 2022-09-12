@@ -21,45 +21,35 @@
 }
 
 .headerBox button {
-  height: 24px;
-  width: 24px;
-}
-
-.dropbtn {
-  color: white;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 .dropdown {
   position: relative;
-  display: inline-block;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
   right: 0;
-  background-color: #f1f1f1;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  background-color: white;
+  box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.2);
 }
 
-.dropdown-content ul {
+.dropdown-content > ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-.dropdown-content a {
-  padding: 12px 16px;
+.dropdown-content > ul > li > a {
+  padding: 0.75rem 1rem;
   display: block;
 }
 
 .dropdown a:hover {
-  background-color: #ddd;
+  background-color: #eee;
 }
 
 .show {
