@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.timeline-container {
+  width: 95%;
+  height: 40%;
+  border: 2px solid black;
+  border-radius: 0.75rem;
+  background-color: pink;
+  padding: 5px;
+}
+
+.timeline-event {
+  border: 1px solid grey;
+  border-radius: 0.5rem;
+  margin: 1px 0;
+}
