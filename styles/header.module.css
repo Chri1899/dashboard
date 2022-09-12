@@ -19,6 +19,7 @@
 
 .headerBox h1 {
   margin: 0;
+  font-size: 1.75rem;
 }
 
 .headerBox button,
@@ -46,13 +47,24 @@
   list-style-type: none;
 }
 
-.dropdown-content > ul > li > a {
-  padding: 0.75rem 1rem;
-  display: block;
+.dropdown-content > ul > li:not(:last-child) {
+  border-bottom: 1px solid #999;
 }
 
-.dropdown a:hover {
+.dropdown-content > ul > li > a {
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dropdown-content > ul > li > a:hover {
   background-color: #eee;
+}
+
+.dropdown-content > ul > li > a > svg {
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 .show {
