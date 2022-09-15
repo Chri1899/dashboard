@@ -12,9 +12,10 @@ fetch("components/timeline.html")
     timeline.innerHTML = data;
   });
 
-const andere = document.querySelector("#andere");
-fetch("components/andere.html")
+const progress = document.querySelector("#progress");
+fetch("components/progress.html")
   .then((res) => res.text())
   .then((data) => {
-    andere.innerHTML = data;
+    progress.innerHTML = data;
   });
+
