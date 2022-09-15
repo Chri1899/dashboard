@@ -19,9 +19,3 @@ fetch("components/progress.html")
     progress.innerHTML = data;
   });
 
-const andere = document.querySelector("#andere");
-fetch("components/andere.html")
-  .then((res) => res.text())
-  .then((data) => {
-    andere.innerHTML = data;
-  });
