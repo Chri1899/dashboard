@@ -30,3 +30,8 @@ button {
 body {
   margin: 1%;
 }
+
+main {
+  margin: 5rem auto 0;
+  width: 95%;
+}
