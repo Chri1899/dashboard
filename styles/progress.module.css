@@ -1,5 +1,8 @@
 #progress {
   height: 40vh;
+  background-color: #e4e4e4;
+  padding: 0.5rem;
+  border-radius: 0.75rem;
 }
 
 #progress > ul {
@@ -9,20 +12,20 @@
   list-style-type: none;
   display: grid;
   grid-template: 1fr 1fr / 1fr 1fr;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 #progress > ul > li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   background-color: #eee;
   border-radius: 0.75rem;
 }
 
 #progress > ul > li > p {
-  margin-top: 0.5rem;
+  margin: 0;
 }
 
 .progress-circle {
