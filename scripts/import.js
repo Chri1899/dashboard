@@ -12,9 +12,18 @@ fetch("components/timeline.html")
     timeline.innerHTML = data;
   });
 
+
 const navigation = document.querySelector("#navigation");
 fetch("components/navigation.html")
   .then((res) => res.text())
   .then((data) => {
     navigation.innerHTML = data;
   });
+
+const progress = document.querySelector("#progress");
+fetch("components/progress.html")
+  .then((res) => res.text())
+  .then((data) => {
+    progress.innerHTML = data;
+  });
+
