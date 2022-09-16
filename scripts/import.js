@@ -12,9 +12,9 @@ fetch("components/timeline.html")
     timeline.innerHTML = data;
   });
 
-const andere = document.querySelector("#andere");
-fetch("components/andere.html")
+const navigation = document.querySelector("#navigation");
+fetch("components/navigation.html")
   .then((res) => res.text())
   .then((data) => {
-    andere.innerHTML = data;
+    navigation.innerHTML = data;
   });

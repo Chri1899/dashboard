@@ -1,0 +1,96 @@
+/* Fullscreen Background and Positioning */
+
+#navigation {
+  display: none;
+}
+
+.navigation-container {
+  display: flex;
+  align-items: center;
+  background-color: rgba(238, 238, 238, 0.6);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+}
+
+/* Navigation Element Container */
+
+.navigation-section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgba(136, 136, 136, 0.4);
+  backdrop-filter: blur(0.175rem);
+}
+
+/* Section Elements */
+
+.navigation-element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 33%;
+  margin: 0;
+}
+
+/* Titles */
+
+.navigation-title {
+  width: 100%;
+  font-size: 2rem;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.8);
+  border-top: 3px solid rgba(255, 255, 255, 0.8);
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  margin: 0;
+}
+
+/* Overwrite Border Styling of H2 */
+
+.first-title {
+  border-top: none;
+}
+
+/* Width, alignment of title and the ul */
+
+.navigation-title,
+.navigation-list {
+  width: 100%;
+  text-align: center;
+}
+
+/* UL Styling */
+
+.navigation-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 1rem;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* List Items Styling */
+
+.navigation-item {
+  display: flex;
+  align-items: center;
+  height: 33%;
+}
+
+/* Link Styling */
+
+.navigation-item a {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
