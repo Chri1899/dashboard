@@ -1,27 +1,33 @@
 <body>
   <ul class="slider-list">
     <li class="settings-item">
-      <button id="konto">Kontoeinstellungen</button>
+      <button
+        class="active"
+        id="konto"
+        onclick="changeSite('accountsettings.html', 'konto')">
+        Konto
+      </button>
     </li>
-  </ul>
-  <ul class="slider-list">
     <li class="settings-item">
-      <button id="profile">Profileinstellungen</button>
+      <button
+        id="profile"
+        onclick="changeSite('profilesettings.html', 'profile')">
+        Profil
+      </button>
     </li>
-  </ul>
-  <ul class="slider-list">
     <li class="settings-item">
-      <button id="linkedAccounts">Verknüpfte Konten</button>
+      <button
+        id="linkedAccounts"
+        onclick="changeSite('linkedsettings.html', 'linkedAccounts')">
+        Verknüpfungen
+      </button>
     </li>
-  </ul>
-  <ul class="slider-list">
-    <li class="settings-item">
-      <button id="notifications">Benachrichtigungen</button>
-    </li>
-  </ul>
-  <ul class="slider-list">
-    <li class="settings-item">
-      <button id="konto">Kontoeinstellungen</button>
+    <li class="settings-item last">
+      <button
+        id="notifications"
+        onclick="changeSite('notificationsettings.html', 'notifications')">
+        Benachrichtigungen
+      </button>
     </li>
   </ul>
 </body>

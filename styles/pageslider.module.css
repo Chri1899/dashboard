@@ -1,0 +1,46 @@
+/* Style the list */
+
+.slider-list {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 6vh;
+  width: 100%;
+  border: 2px solid black;
+  overflow: auto;
+  white-space: nowrap;
+  align-items: center;
+  border-radius: 50px;
+}
+
+/* Hide Scrollbar */
+
+.slider-list::-webkit-scrollbar {
+  display: none;
+}
+
+/* Style the List items */
+
+.settings-item {
+  border-right: 2px solid black;
+  padding: 0.6rem;
+}
+
+/* Last Button remove border */
+
+.last {
+  border-right: none;
+}
+
+/* Active Button */
+
+.active {
+  background-color: #eee;
+}
+
+/* Button Styling */
+
+.settings-item button {
+  padding: 0.5rem 0.9rem;
+}
