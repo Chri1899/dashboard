@@ -1,9 +1,9 @@
-# check-projekte
+# Dashboard
 
-## icons:
+## icons
 
-- https://fonts.google.com/icons?selected=Material+Icons
+- <https://fonts.google.com/icons?selected=Material+Icons>
 
-## circular progress bar:
+## circular progress bar
 
-- https://github.com/tiagobalmeida/purecss-circular-progress-bar
+- <https://github.com/tiagobalmeida/purecss-circular-progress-bar>
