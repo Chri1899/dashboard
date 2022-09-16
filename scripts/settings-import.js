@@ -11,3 +11,10 @@ fetch("/components/globals/navigation.html")
   .then((data) => {
     navigation.innerHTML = data;
   });
+
+const slider = document.querySelector("#pageSlider");
+fetch("/components/settings/pageslider.html")
+  .then((res) => res.text())
+  .then((data) => {
+    slider.innerHTML = data;
+  });
