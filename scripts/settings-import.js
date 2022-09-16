@@ -1,12 +1,12 @@
 const header = document.querySelector("#header");
-fetch("/components/header.html")
+fetch("/components/globals/header.html")
   .then((res) => res.text())
   .then((data) => {
     header.innerHTML = data;
   });
 
 const navigation = document.querySelector("#navigation");
-fetch("/components/navigation.html")
+fetch("/components/globals/navigation.html")
   .then((res) => res.text())
   .then((data) => {
     navigation.innerHTML = data;
