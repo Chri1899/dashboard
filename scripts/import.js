@@ -26,4 +26,3 @@ fetch("components/progress.html")
   .then((data) => {
     progress.innerHTML = data;
   });
-
