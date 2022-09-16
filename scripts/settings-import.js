@@ -26,9 +26,11 @@ fetch("/components/settings/accountsettings.html")
     settingsPage.innerHTML = data;
   });
 
+/* Change Settings Content onclick */
+
 function changeSite(changeTo, buttonID) {
-  const oldElement = document.querySelector("#settingsPage");
-  const oldElementButtonID = oldElement.childNodes;
+  const oldElement = document.getElementsByClassName("active")[0];
+  oldElement.classList.remove("active");
 
   fetch(`/components/settings/${changeTo}`)
     .then((res) => res.text())
