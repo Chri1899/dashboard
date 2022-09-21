@@ -37,7 +37,8 @@
 /* Active Button */
 
 .active {
-  background-color: #eee;
+  background-color: var(--primary-color);
+  border-radius: 20px;
 }
 
 /* Button Styling */
