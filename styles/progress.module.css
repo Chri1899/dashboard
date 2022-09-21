@@ -21,7 +21,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  background-color: #eee;
+  box-shadow: 0 4px 6px -1px var(--bg-color-dark),
+    0 2px 4px -2px var(--bg-color-dark);
   border-radius: 0.75rem;
 }
 
@@ -60,7 +61,7 @@
   width: 5em;
   text-align: center;
   display: block;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   z-index: 2;
 }
 .left-half-clipper {
@@ -81,7 +82,7 @@
   width: 5em;
   height: 5em;
   border-radius: 50%;
-  border: 0.45em solid var(--primary-color);
+  border: 0.45em solid var(--secondary-color);
   /*background-color: #4D642D;*/
   box-sizing: border-box;
 }
@@ -89,7 +90,7 @@
 .progress-circle.over50 .first50-bar {
   position: absolute;
   clip: rect(0, 5em, 5em, 2.5em);
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   border-radius: 50%;
   width: 5em;
   height: 5em;
