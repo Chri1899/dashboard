@@ -8,17 +8,30 @@
     <link rel="stylesheet" href="/styles/globals.css" />
     <link rel="stylesheet" href="/styles/header.module.css" />
     <link rel="stylesheet" href="/styles/header.navigation.module.css" />
-    <link rel="stylesheet" href="/styles/progress.module.css" />
-    <link rel="stylesheet" href="/styles/timeline.css" />
+    <link rel="stylesheet" href="/styles/profile.css" />
+    <script src="/scripts/profile-import.js" defer></script>
     <script src="/scripts/menuscript.js" async></script>
-    <script src="/scripts/import.js" defer></script>
   </head>
   <body>
     <nav id="navigation"></nav>
     <header id="header"></header>
     <main>
-      <div id="timeline"></div>
-      <section id="progress"></section>
+      <div class="profile-image">
+        <img src="/images/profileicon.png" alt="" height="150" width="150" />
+      </div>
+      <h1>Max Mustermann</h1>
+      <p>Status: Online</p>
+      <p>Email: test@mail.de</p>
+      <p>Title: CEO</p>
+      <p>Abteilung: Marketing</p>
+      <div>
+        <h2>Accounts</h2>
+        <ul>
+          <li>Slack</li>
+          <li>Absence.io</li>
+          <li>GitHub</li>
+        </ul>
+      </div>
     </main>
   </body>
 </html>
