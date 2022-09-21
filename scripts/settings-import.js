@@ -11,3 +11,32 @@ fetch("/components/globals/navigation.html")
   .then((data) => {
     navigation.innerHTML = data;
   });
+
+const slider = document.querySelector("#pageSlider");
+fetch("/components/settings/pageslider.html")
+  .then((res) => res.text())
+  .then((data) => {
+    slider.innerHTML = data;
+  });
+
+const settingsPage = document.querySelector("#settingsPage");
+fetch("/components/settings/accountsettings.html")
+  .then((res) => res.text())
+  .then((data) => {
+    settingsPage.innerHTML = data;
+  });
+
+/* Change Settings Content onclick */
+
+function changeSite(changeTo, buttonID) {
+  const oldElement = document.getElementsByClassName("active")[0];
+  oldElement.classList.remove("active");
+
+  fetch(`/components/settings/${changeTo}`)
+    .then((res) => res.text())
+    .then((data) => {
+      settingsPage.innerHTML = data;
+    });
+
+  document.getElementById(buttonID).setAttribute("class", "active");
+}
