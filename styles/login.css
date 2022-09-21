@@ -12,7 +12,7 @@ body {
   width: 90vw;
   max-width: 30rem;
   padding: 1rem;
-  background-color: lightgray;
+  background-color: var(--bg-color-dark);
   border-radius: 0.75rem;
 }
 
@@ -34,18 +34,26 @@ button {
 
 input,
 button {
+  outline: none;
+  border: none;
+  box-shadow: none;
   padding: 1rem 0.75rem;
   border-radius: 0.25rem;
-  border: 1px solid #878787;
+}
+
+input:focus {
+  outline: 1px solid var(--primary-color);
 }
 
 input {
   margin: 0.2rem 0 1rem;
+  color: var(--font-color);
+  background-color: var(--bg-color-darker);
 }
 
 button {
-  font-size: 0.9rem;
-  background-color: lightblue;
+  font-size: 0.95rem;
+  background-color: var(--primary-color);
 }
 
 hr {
