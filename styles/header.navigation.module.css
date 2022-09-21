@@ -7,7 +7,6 @@
 .navigation-container {
   display: flex;
   align-items: center;
-  background-color: rgba(238, 238, 238, 0.6);
   position: fixed;
   top: 0;
   bottom: 0;
@@ -23,10 +22,11 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
-  background-color: rgba(136, 136, 136, 0.4);
-  backdrop-filter: blur(0.175rem);
+  background-color: var(--bg-color);
+  opacity: 0.9;
+  color: var(--font-color);
 }
 
 /* Section Elements */
@@ -45,8 +45,8 @@
 .navigation-title {
   width: 100%;
   font-size: 2rem;
-  border-bottom: 3px solid rgba(255, 255, 255, 0.8);
-  border-top: 3px solid rgba(255, 255, 255, 0.8);
+  border-bottom: 3px solid var(--font-color);
+  border-top: 3px solid var(--font-color);
   padding-bottom: 1rem;
   padding-top: 1rem;
   margin: 0;
