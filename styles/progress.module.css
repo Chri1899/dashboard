@@ -1,6 +1,6 @@
 #progress {
-  height: 23rem;
-  background-color: var(--bg-color-darker);
+  height: 40vh;
+  background-color: #e4e4e4;
   margin-top: 1rem;
   padding: 0.5rem;
   border-radius: 0.75rem;
@@ -36,6 +36,7 @@
   padding: 0;
   width: 5em;
   height: 5em;
+  background-color: lightgray;
   border-radius: 50%;
   line-height: 5em;
 }
@@ -50,7 +51,7 @@
   border-radius: 50%;
   width: 4.3em;
   height: 4.3em;
-  background-color: var(--bg-color);
+  background-color: white;
   content: " ";
 }
 
@@ -82,6 +83,7 @@
   height: 5em;
   border-radius: 50%;
   border: 0.45em solid var(--secondary-color);
+  /*background-color: #4D642D;*/
   box-sizing: border-box;
 }
 
