@@ -23,7 +23,8 @@
 }
 
 .headerBox button,
-.headerBox svg {
+.headerBox svg,
+.headerBox a {
   height: 2rem;
   width: 2rem;
 }
