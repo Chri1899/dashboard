@@ -1,3 +1,5 @@
+let current;
+
 const header = document.querySelector("#header");
 fetch("/components/globals/header.html")
   .then((res) => res.text())
@@ -29,6 +31,10 @@ fetch("/components/settings/accountsettings.html")
 /* Change Settings Content onclick */
 
 function changeSite(changeTo, buttonID) {
+  if (changeTo === current) {
+    return;
+  }
+
   const oldElement = document.getElementsByClassName("active")[0];
   oldElement.classList.remove("active");
 
@@ -39,4 +45,5 @@ function changeSite(changeTo, buttonID) {
     });
 
   document.getElementById(buttonID).setAttribute("class", "active");
+  current = changeTo;
 }
