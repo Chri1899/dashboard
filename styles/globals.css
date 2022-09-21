@@ -3,8 +3,6 @@
   --secondary-color: #0271c2;
   --font-color: #f8f8f8;
   --bg-color: #232323;
-  --bg-color-darker: #191919;
-  --bg-color-dark: #121212;
   --button-red: #e30613;
   --button-green: #7ab51d;
 }
@@ -25,8 +23,6 @@ body {
   line-height: 1.5;
   overflow-x: hidden;
   word-wrap: break-word;
-  color: var(--font-color);
-  background-color: var(--bg-color);
 }
 
 a {

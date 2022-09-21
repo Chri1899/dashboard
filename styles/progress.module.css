@@ -1,6 +1,6 @@
 #progress {
-  height: 23rem;
-  background-color: var(--bg-color-darker);
+  height: 40vh;
+  background-color: #e4e4e4;
   margin-top: 1rem;
   padding: 0.5rem;
   border-radius: 0.75rem;
@@ -21,9 +21,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-
-  box-shadow: 0 4px 6px -1px var(--bg-color-dark),
-    0 2px 4px -2px var(--bg-color-dark);
+  background-color: #eee;
   border-radius: 0.75rem;
 }
 
@@ -37,6 +35,7 @@
   padding: 0;
   width: 5em;
   height: 5em;
+  background-color: lightgray;
   border-radius: 50%;
   line-height: 5em;
 }
@@ -51,7 +50,7 @@
   border-radius: 50%;
   width: 4.3em;
   height: 4.3em;
-  background-color: var(--bg-color);
+  background-color: white;
   content: " ";
 }
 
@@ -83,6 +82,7 @@
   height: 5em;
   border-radius: 50%;
   border: 0.45em solid var(--primary-color);
+  /*background-color: #4D642D;*/
   box-sizing: border-box;
 }
 
