@@ -1,6 +1,7 @@
 #progress {
   height: 40vh;
   background-color: #e4e4e4;
+  margin-top: 1rem;
   padding: 0.5rem;
   border-radius: 0.75rem;
 }
