@@ -7,13 +7,27 @@
 .navigation-container {
   display: flex;
   align-items: center;
-  background-color: rgba(238, 238, 238, 0.6);
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 20;
+}
+
+/* Closing Section Container */
+
+.closing-section {
+  display: flex;
+  width: 90%;
+  height: 5%;
+  margin: 1rem;
+  justify-content: space-between;
+}
+
+.closing-section > h1 {
+  margin: 0;
+  text-align: center;
 }
 
 /* Navigation Element Container */
@@ -23,10 +37,11 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
-  background-color: rgba(136, 136, 136, 0.4);
-  backdrop-filter: blur(0.175rem);
+  background-color: var(--bg-color);
+  opacity: 0.9;
+  color: var(--font-color);
 }
 
 /* Section Elements */
@@ -35,18 +50,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  height: 33%;
+  height: 30%;
   margin: 0;
 }
 
 /* Titles */
 
 .navigation-title {
-  width: 100%;
   font-size: 2rem;
-  border-bottom: 3px solid rgba(255, 255, 255, 0.8);
-  border-top: 3px solid rgba(255, 255, 255, 0.8);
+  border-bottom: 3px solid var(--font-color);
+  border-top: 3px solid var(--font-color);
   padding-bottom: 1rem;
   padding-top: 1rem;
   margin: 0;

@@ -4,8 +4,7 @@
   z-index: 10;
   height: 4rem;
   width: 100%;
-  background-color: white;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--primary-color);
   user-select: none;
 }
 
@@ -28,4 +27,5 @@
 .headerBox .profileLink {
   height: 2rem;
   width: 2rem;
+  fill: var(--primary-color);
 }
