@@ -4,28 +4,24 @@
   z-index: 10;
   height: 4rem;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
   border-bottom: 1px solid var(--primary-color);
   background-color: var(--bg-color);
   user-select: none;
 }
 
-.headerBox {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  justify-content: space-between;
-  margin: 0 1rem;
-}
-
-.headerBox .homeLink,
-.headerBox h1 {
+#header .homeLink,
+#header h1 {
   margin: 0;
   font-size: 1.75rem;
 }
 
-.headerBox button,
-.headerBox svg,
-.headerBox .profileLink {
+#header button,
+#header svg,
+#header .profileLink {
   height: 2rem;
   width: 2rem;
   fill: var(--primary-color);
