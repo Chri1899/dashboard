@@ -9,7 +9,7 @@ body {
 }
 
 .formBox {
-  width: 90vw;
+  width: 95%;
   max-width: 30rem;
   padding: 1rem;
   background-color: var(--bg-color-dark);
@@ -21,7 +21,6 @@ h1 {
   text-align: center;
 }
 
-label,
 input,
 button {
   width: 100%;
@@ -32,23 +31,13 @@ button {
   font-weight: 600;
 }
 
-input,
-button {
-  outline: none;
-  border: none;
-  box-shadow: none;
-  padding: 1rem 0.75rem;
-  border-radius: 0.25rem;
-}
-
-input:focus {
-  outline: 1px solid var(--primary-color);
-}
-
 input {
   margin: 0.2rem 0 1rem;
-  color: var(--font-color);
-  background-color: var(--bg-color-darker);
+}
+
+button {
+  padding: 1rem 0.75rem;
+  border-radius: 0.75rem;
 }
 
 button {

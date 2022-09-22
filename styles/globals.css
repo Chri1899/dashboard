@@ -48,6 +48,21 @@ main {
   width: 95%;
 }
 
+input {
+  outline: none;
+  border: none;
+  box-shadow: none;
+  padding: 1rem 0.75rem;
+  margin: 0.2rem 0;
+  border-radius: 0.75rem;
+  color: var(--font-color);
+  background-color: var(--bg-color-darker);
+}
+
+input:focus {
+  outline: 2px solid var(--primary-color);
+}
+
 .card {
   height: 22rem;
   background-color: var(--bg-color-darker);
