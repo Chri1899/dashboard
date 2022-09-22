@@ -50,6 +50,12 @@ main {
 
 .card {
   height: 22rem;
+  background-color: var(--bg-color-dark);
+  border-radius: 0.75rem;
+}
+
+.card-item {
   background-color: var(--bg-color-darker);
+  border: 1px solid var(--secondary-color);
   border-radius: 0.75rem;
 }
