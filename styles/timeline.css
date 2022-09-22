@@ -12,9 +12,6 @@
   flex-direction: column-reverse;
   overflow-y: scroll;
   overflow-wrap: normal;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
 /* Event Item Styling */
