@@ -1,7 +1,11 @@
+/* Tab Heading */
+
 .settings-tab {
   text-align: center;
   margin-top: 0;
 }
+
+/* Settings-page container */
 
 .settings-container {
   display: flex;
@@ -10,11 +14,37 @@
   justify-content: center;
 }
 
+/* Single Info Container */
+
 .information-container {
   display: flex;
   flex-direction: column;
   width: 45%;
 }
+
+/* Input Design */
+
+.information-container > .inputField {
+  padding: 0.5rem 0.35rem;
+}
+
+/* Container for multiple radiobuttons */
+
+.radiobutton-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Container for Radiobutton and Label */
+
+.radiobutton-container > .button-option {
+  display: flex;
+  gap: 0.6rem;
+}
+
+/* Submit / Cancel Buttons */
 
 .button-container {
   width: 100%;
