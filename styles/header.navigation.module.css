@@ -4,6 +4,8 @@
   display: none;
 }
 
+/* Fullscreen Container Styling */
+
 .navigation-container {
   display: flex;
   align-items: center;
@@ -13,6 +15,7 @@
   left: 0;
   right: 0;
   z-index: 20;
+  backdrop-filter: blur(0.2rem);
 }
 
 /* Closing Section Container */
