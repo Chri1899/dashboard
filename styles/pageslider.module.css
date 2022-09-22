@@ -45,6 +45,13 @@
   border-right: 2px solid black;
   padding: 0.6rem;
   transition: background-color 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.settings-icon {
+  margin: 0.2rem;
 }
 
 /* Last Button remove border */
@@ -59,8 +66,12 @@
   background-color: var(--primary-color);
 }
 
+.active svg {
+  fill: var(--bg-color);
+}
+
 /* Button Styling */
 
 .settings-item button {
-  padding: 0.5rem 0.9rem;
+  padding: 0.6rem;
 }
