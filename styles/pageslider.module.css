@@ -1,18 +1,36 @@
+/* Slider background container */
+
+.slider-container {
+  position: relative;
+  width: 80%;
+  height: 6vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(var(--primary-color), var(--bg-color));
+  backdrop-filter: contrast(70%);
+  border-radius: 1.3rem;
+  box-shadow: 3px 3px 3px 1px var(--bg-color-darker);
+}
+
 /* Style the list */
 
 .slider-list {
-  list-style-type: none;
+  position: absolute;
+  height: 4vh;
+  width: 95%;
   display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
-  height: 6vh;
-  width: 100%;
+  list-style-type: none;
   border: 2px solid black;
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
-  align-items: center;
-  border-radius: 50px;
+  border-radius: 1rem;
+  background-color: var(--bg-color);
 }
 
 /* Hide Scrollbar */
