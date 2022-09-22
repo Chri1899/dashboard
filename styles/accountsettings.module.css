@@ -5,27 +5,16 @@
   margin-top: 0;
 }
 
-/* Settings-page container */
+/* Information row */
 
-.settings-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  justify-content: center;
-}
-
-/* Single Info Container */
-
-.information-container {
-  display: flex;
-  flex-direction: column;
-  width: 45%;
+.information-container > h3 {
+  padding: 1rem 0.75rem 0.2rem;
 }
 
 /* Input Design */
 
 .information-container > .inputField {
-  padding: 0.5rem 0.35rem;
+  width: 100%;
 }
 
 /* Container for multiple radiobuttons */
@@ -33,8 +22,9 @@
 .radiobutton-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   height: 100%;
+  padding-left: 0.75rem;
+  gap: 1rem;
 }
 
 /* Container for Radiobutton and Label */
@@ -42,6 +32,51 @@
 .radiobutton-container > .button-option {
   display: flex;
   gap: 0.6rem;
+}
+
+/* Switch Design */
+
+.switch {
+  display: inline-block;
+  width: 5rem;
+  height: 2rem;
+  position: relative;
+}
+
+.toggle-thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-color-darker);
+  border-radius: 2.5rem;
+  cursor: pointer;
+}
+
+.toggle-thumb:before {
+  content: "";
+  height: 1.3rem;
+  width: 1.3rem;
+  position: absolute;
+  left: 0.4rem;
+  bottom: 0.4rem;
+  border-radius: 50%;
+  background-color: var(--font-color);
+  transition: 0.4s all ease;
+}
+
+.checkbox {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.checkbox:checked + .toggle-thumb:before {
+  transform: translateX(3rem);
 }
 
 /* Submit / Cancel Buttons */
