@@ -44,6 +44,7 @@ function changeSite(changeTo, buttonID) {
       settingsPage.innerHTML = data;
     });
 
-  document.getElementById(buttonID).setAttribute("class", "active");
+  document.getElementById(buttonID).parentElement.classList.add("active");
   current = changeTo;
+  console.log(document.getElementById(buttonID).parentElement);
 }

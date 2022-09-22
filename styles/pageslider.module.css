@@ -1,18 +1,36 @@
+/* Slider background container */
+
+.slider-container {
+  position: relative;
+  width: 80%;
+  height: 7vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(var(--primary-color), var(--bg-color));
+  backdrop-filter: contrast(70%);
+  border-radius: 1.3rem;
+  box-shadow: 3px 3px 3px 1px var(--bg-color-darker);
+}
+
 /* Style the list */
 
 .slider-list {
-  list-style-type: none;
+  position: absolute;
+  height: 5vh;
+  width: 95%;
   display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
-  height: 6vh;
-  width: 100%;
+  list-style-type: none;
   border: 2px solid black;
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
-  align-items: center;
-  border-radius: 50px;
+  border-radius: 1rem;
+  background-color: var(--bg-color);
 }
 
 /* Hide Scrollbar */
@@ -26,6 +44,17 @@
 .settings-item {
   border-right: 2px solid black;
   padding: 0.6rem;
+  transition: background-color 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Icon Styling */
+
+.settings-icon {
+  margin: 0.2rem;
+  transition: fill 0.5s ease-in-out;
 }
 
 /* Last Button remove border */
@@ -38,11 +67,14 @@
 
 .active {
   background-color: var(--primary-color);
-  border-radius: 20px;
+}
+
+.active svg {
+  fill: var(--bg-color);
 }
 
 /* Button Styling */
 
 .settings-item button {
-  padding: 0.5rem 0.9rem;
+  padding: 0.6rem;
 }
