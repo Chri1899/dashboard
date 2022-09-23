@@ -38,6 +38,29 @@ a {
   text-decoration: none;
 }
 
+/* Main Content Grid */
+
+.content-grid {
+  display: grid;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "timeline"
+    "progress";
+}
+
+#timeline {
+  grid-area: timeline;
+}
+
+#progress {
+  grid-area: progress;
+}
+
+/* General Stylings */
+
 button {
   padding: 0;
   color: inherit;
