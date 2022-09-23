@@ -1,15 +1,10 @@
-/* Container Styling */
-#timeline {
-  width: 100%;
-  padding: 0.3rem;
-}
-
 /* List Styling */
 .timeline-list {
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column-reverse;
+  gap: 0.5rem;
   overflow-y: scroll;
   overflow-wrap: normal;
 }
@@ -20,8 +15,11 @@
   flex-direction: row;
   gap: 0.6rem;
   height: 24%;
-  width: 98%;
-  margin: 2% 1% 3% 1%;
+}
+
+/* Styling for last item in list */
+.timeline-event:last-of-type {
+  margin-top: 0.2rem; /* Displays the last element fully (otherwise, border was cut off) */
 }
 
 /* Profile Icon Container/Link */
@@ -41,8 +39,6 @@
 
 /* Event Description/Time Container */
 .timeline-event .span-container {
-  width: 78%;
-  height: 100%;
   justify-self: flex-end;
   display: flex;
   flex-direction: column;

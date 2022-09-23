@@ -70,6 +70,8 @@ select:focus {
 }
 
 .card {
+  margin-top: 1rem;
+  padding: 0.5rem;
   height: 22rem;
   background-color: var(--bg-color-dark);
   border-radius: 0.75rem;
