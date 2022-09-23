@@ -15,14 +15,27 @@
   padding: 0.5rem 0.75rem;
 }
 
-.event-item > .profile-link {
+.event-item > .link-container {
   grid-area: 1 / 1 / 3 / 2;
   display: flex;
   align-items: center;
+  gap: 0;
 }
 .event-item > .event-description {
   grid-area: 1 / 2 / 2 / 4;
 }
 .event-item > .event-time {
   grid-area: 2 / 2 / 3 / 4;
+}
+
+.profile-link {
+  display: inline-block;
+  max-height: fit-content;
+  max-width: fit-content;
+}
+
+.profile-icon {
+  display: block;
+  height: 3rem;
+  width: 3rem;
 }
