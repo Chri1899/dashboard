@@ -12,18 +12,36 @@
     <link rel="stylesheet" href="/styles/timeline.module.css" />
     <script src="/scripts/menuscript.js" async></script>
     <script src="/scripts/import.js" defer></script>
+<<<<<<< HEAD
     <script src="/scripts/cookies.js"></script>
     <script src="/scripts/themes.js"></script>
   </head>
   <body onload="setTheme(getCookie('theme'))">
+=======
+    <script src="/scripts/test.js"></script>
+  </head>
+  <body
+    onload="document.documentElement.setAttribute('data-theme', getCookie('theme'))">
+>>>>>>> 3f473d4 (theme changer with cookie for saving data)
     <nav id="navigation"></nav>
     <header id="header"></header>
     <main class="content-grid">
       <section id="timeline" class="card"></section>
       <section id="progress" class="card"></section>
       <div>
+<<<<<<< HEAD
         <button onclick="setTheme('light')">Switch to light theme</button>
         <button onclick="setTheme('dark')">Switch to dark theme</button>
+=======
+        <button
+          onclick="document.documentElement.setAttribute('data-theme', 'light'); document.cookie='theme=light;'">
+          Switch to light theme
+        </button>
+        <button
+          onclick="document.documentElement.setAttribute('data-theme', 'dark'); document.cookie='theme=dark;'">
+          Switch to dark theme
+        </button>
+>>>>>>> 3f473d4 (theme changer with cookie for saving data)
       </div>
     </main>
   </body>
