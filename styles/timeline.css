@@ -26,7 +26,7 @@
 }
 .event-item > .event-time {
   grid-area: 2 / 2 / 3 / 4;
-  font-size: small3;
+  font-size: small;
 }
 
 .profile-link {
