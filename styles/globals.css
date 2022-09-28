@@ -167,10 +167,6 @@ ol {
     grid-area: 1/ 1/ 3/ 2;
   }
 
-  #progress {
-    grid-area: 1 / 2 / 2 / 3;
-  }
-
   .card {
     min-height: 100%;
   }
