@@ -7,10 +7,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(var(--primary-color), var(--bg-color));
+  background: radial-gradient(var(--primary-color), var(--base-100-color));
   backdrop-filter: contrast(70%);
   border-radius: 1.3rem;
-  box-shadow: 3px 3px 3px 1px var(--bg-color-darker);
+  box-shadow: 3px 3px 3px 1px var(--base-200-color);
 }
 
 /* Style the list */
@@ -26,7 +26,7 @@
   overflow-y: hidden;
   white-space: nowrap;
   border-radius: 1rem;
-  background-color: var(--bg-color);
+  background-color: var(--base-100-color);
 }
 
 /* Hide Scrollbar */
@@ -72,7 +72,7 @@
 }
 
 .active svg {
-  fill: var(--bg-color);
+  fill: var(--base-100-color);
 }
 
 /* Button Styling */

@@ -43,7 +43,7 @@
   height: 100%;
   width: 100%;
   margin: 0 auto;
-  background-color: var(--bg-color);
+  background-color: var(--base-100-color);
   opacity: 0.9;
   color: var(--font-color);
 }
