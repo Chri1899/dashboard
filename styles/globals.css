@@ -125,6 +125,7 @@ a {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, 1fr);
+<<<<<<< HEAD
   gap: 0.5rem;
 }
 
@@ -133,6 +134,10 @@ a {
 }
 #progress {
   grid-area: 2 / 1 / 3 / 2;
+=======
+  grid-column-gap: 0px;
+  grid-row-gap: 1rem;
+>>>>>>> 9942f69 (grid styling)
 }
 
 /* General Stylings */
@@ -147,7 +152,11 @@ button {
 }
 
 main {
+<<<<<<< HEAD
   margin: 0.5rem auto 0;
+=======
+  margin: 1rem auto 0;
+>>>>>>> 9942f69 (grid styling)
   width: 95%;
 }
 
