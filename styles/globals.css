@@ -1,6 +1,7 @@
 /* TODO: add more color schemes*/
 :root {
   /* PRIMARY COLOR */
+<<<<<<< HEAD
   --primary-color: #005fa8;
   --primary-focus-color: #004275;
   --primary-content-color: #f8f8f8;
@@ -8,6 +9,15 @@
   --secondary-color: #0071c2;
   --secondary-focus-color: #00538f;
   --secondary-content-color: #f8f8f8;
+=======
+  --primary-color: #005ea8;
+  --primary-focus-color: ;
+  --primary-content-color: ;
+  /* SECONDARY COLOR */
+  --secondary-color: #0271c2;
+  --secondary-focus-color: ;
+  --secondary-content-color: ;
+>>>>>>> 7bde3ad (colors converted to daisyUI color naming scheme)
   /* ACCENT COLOR */
   --accent-color: ;
   --accent-focus-color: ;
@@ -22,6 +32,7 @@
   --base-300-color: #121212;
   --base-content-color: #f8f8f8;
   /* INFO COLOR */
+<<<<<<< HEAD
   --info-color: #0000ff;
   --info-content-color: #000;
   /* SUCCESS COLOR*/
@@ -89,6 +100,19 @@
 .error {
   color: var(--error-content-color);
   background-color: var(--error-color);
+=======
+  --info-color: ;
+  --info-content-color: ;
+  /* SUCCESS COLOR*/
+  --success-color: #7ab51d;
+  --success-content-color: ;
+  /* WARNING COLOR */
+  --warning-color: ;
+  --warning-content-color: ;
+  /* ERROR COLOR */
+  --error-color: #e30613;
+  --error-content-color: ;
+>>>>>>> 7bde3ad (colors converted to daisyUI color naming scheme)
 }
 
 *,
