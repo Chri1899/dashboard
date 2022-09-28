@@ -165,11 +165,6 @@ ol {
   list-style-type: none;
 }
 
-svg {
-  width: 100%;
-  height: 100%;
-}
-
 @media only screen and (width > 425px) and (width <= 768px) {
   .content-grid {
     grid-template-columns: 1.26fr 1fr;
