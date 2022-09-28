@@ -106,8 +106,7 @@ button {
 }
 
 main {
-  margin: 1rem auto 0;
-  width: 95%;
+  margin: 0.75rem; /* IS THIS A GOOD IDEA? */
 }
 
 input,
