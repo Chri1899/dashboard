@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="/styles/timeline.css" />
     <script src="/scripts/menuscript.js" async></script>
     <script src="/scripts/import.js" defer></script>
+    <script src="/scripts/test.js"></script>
   </head>
-  <body>
+  <body
+    onload="document.documentElement.setAttribute('data-theme', getCookie('theme'))">
     <nav id="navigation"></nav>
     <header id="header"></header>
     <main class="content-grid">
@@ -32,11 +34,11 @@
       </p>
       <div>
         <button
-          onclick="document.documentElement.setAttribute('data-theme', 'light')">
+          onclick="document.documentElement.setAttribute('data-theme', 'light'); document.cookie='theme=light;'">
           Switch to light theme
         </button>
         <button
-          onclick="document.documentElement.setAttribute('data-theme', 'dark')">
+          onclick="document.documentElement.setAttribute('data-theme', 'dark'); document.cookie='theme=dark;'">
           Switch to dark theme
         </button>
       </div>
