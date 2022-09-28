@@ -22,17 +22,37 @@
   --base-300-color: #121212;
   --base-content-color: #f8f8f8;
   /* INFO COLOR */
-  --info-color: ;
-  --info-content-color: ;
+  --info-color: #0000ff;
+  --info-content-color: #000;
   /* SUCCESS COLOR*/
   --success-color: #7ab51d;
-  --success-content-color: ;
+  --success-content-color: #000;
   /* WARNING COLOR */
-  --warning-color: ;
-  --warning-content-color: ;
+  --warning-color: #ffff00;
+  --warning-content-color: #000;
   /* ERROR COLOR */
   --error-color: #e30613;
-  --error-content-color: ;
+  --error-content-color: #000;
+}
+
+.info {
+  color: var(--info-content-color);
+  background-color: var(--info-color);
+}
+
+.success {
+  color: var(--success-content-color);
+  background-color: var(--success-color);
+}
+
+.warning {
+  color: var(--warning-content-color);
+  background-color: var(--warning-color);
+}
+
+.error {
+  color: var(--error-content-color);
+  background-color: var(--error-color);
 }
 
 *,

@@ -48,11 +48,6 @@
 }
 
 .button-container button {
-  background-color: var(--button-red);
   padding: 1rem;
   border-radius: 50px;
-}
-
-.button-container button:first-child {
-  background-color: var(--button-green);
 }
