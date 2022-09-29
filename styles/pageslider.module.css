@@ -65,11 +65,8 @@
 /* Active Button */
 
 .active {
+  color: var(--base-100-color);
   background-color: var(--primary-color);
-}
-
-.active svg {
-  fill: var(--base-100-color);
 }
 
 /* Button Styling */
