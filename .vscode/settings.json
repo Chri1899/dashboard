@@ -2,5 +2,6 @@
   "material-icon-theme.activeIconPack": "none",
   "material-icon-theme.folders.associations": {
     "scripts": "javascript"
-  }
+  },
+  "editor.fontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace"
 }

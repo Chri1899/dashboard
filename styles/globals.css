@@ -44,8 +44,7 @@ a {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  gap: 0.5rem;
 }
 
 #timeline {
@@ -67,9 +66,8 @@ button {
 }
 
 main {
-  margin: 0 auto;
+  margin: 0.5rem auto 0;
   width: 95%;
-  max-height: 100%;
 }
 
 input,
@@ -90,7 +88,6 @@ select:focus {
 }
 
 .card {
-  margin-top: 1rem;
   height: 22rem;
   padding: 0.5rem;
   background-color: var(--bg-color-dark);
@@ -125,7 +122,6 @@ ol {
   .content-grid {
     grid-template-columns: 1.26fr 1fr;
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0.5rem;
   }
 
   #timeline {
@@ -143,15 +139,30 @@ ol {
 
 /* Styling for small screens and laptops */
 
-@media only screen and (width > 769) {
+@media only screen and (width > 768px) {
 }
 
 /* Styling for Desktops and large screens */
 
-@media only screen and (width > 1025) {
+@media only screen and (width > 1024px) {
+  .content-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 90vh;
+  }
+
+  #timeline {
+    grid-area: 1 / 3 / 3 / 3;
+  }
+
+  #progress {
+    grid-area: 1 / 1 / 1 / 1;
+  }
+
+  /* Not viable right now */
 }
 
 /* Styling for Extra large screens and TVs */
 
-@media only screen and (width > 1201) {
+@media only screen and (width > 1200px) {
 }
