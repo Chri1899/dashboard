@@ -38,7 +38,11 @@
 /* Style the List items */
 
 .settings-item {
+<<<<<<< HEAD
   border-right: 2px solid var(--base-300-color);
+=======
+  border-right: 2px solid black;
+>>>>>>> 0fcf294 (fix page slider color and area)
   transition: background-color 0.3s ease-in-out;
   flex-grow: 1;
   height: 100%;
