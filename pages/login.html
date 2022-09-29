@@ -7,8 +7,10 @@
     <title>Dashboard - Login</title>
     <link rel="stylesheet" href="/styles/globals.css" />
     <link rel="stylesheet" href="/styles/login.css" />
+    <script src="/scripts/cookies.js"></script>
+    <script src="/scripts/themes.js"></script>
   </head>
-  <body class="center">
+  <body class="center" onload="setTheme(getCookie('theme'))">
     <div class="formBox">
       <h1>Anmelden</h1>
       <form>

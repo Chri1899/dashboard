@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="/styles/profile.css" />
     <script src="/scripts/profile-import.js" defer></script>
     <script src="/scripts/menuscript.js" async></script>
+    <script src="/scripts/cookies.js"></script>
+    <script src="/scripts/themes.js"></script>
   </head>
-  <body>
+  <body onload="setTheme(getCookie('theme'))">
     <nav id="navigation"></nav>
     <header id="header"></header>
     <main>
