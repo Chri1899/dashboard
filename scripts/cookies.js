@@ -17,5 +17,8 @@ function getCookie(cname) {
       return c.substring(name.length, c.length);
     }
   }
+  if (cname === "theme") {
+    return "dark";
+  }
   return "";
 }
