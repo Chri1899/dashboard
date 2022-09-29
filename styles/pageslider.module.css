@@ -21,7 +21,7 @@
   width: 95%;
   display: flex;
   align-items: center;
-  border: 2px solid black;
+  border: 2px solid var(--base-300-color);
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
@@ -38,7 +38,7 @@
 /* Style the List items */
 
 .settings-item {
-  border-right: 2px solid black;
+  border-right: 2px solid var(--base-300-color);
   transition: background-color 0.3s ease-in-out;
   flex-grow: 1;
   height: 100%;
