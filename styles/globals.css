@@ -196,7 +196,7 @@ ol {
 
 /* Styling for Tablets */
 
-@media only screen and (width > 425px) {
+@media only screen and (width > 480px) {
   .content-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
