@@ -42,7 +42,7 @@ button {
 
 button {
   font-size: 0.95rem;
-  color: var(--base-300-color);
+  color: var(--base-200-color);
   background-color: var(--primary-color);
 }
 
