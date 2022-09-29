@@ -44,7 +44,7 @@
   margin: 0 auto;
   background-color: var(--base-100-color);
   opacity: 0.9;
-  color: var(--font-color);
+  color: var(--base-content-color);
 }
 
 /* Section Elements */
@@ -61,8 +61,8 @@
 
 .navigation-title {
   font-size: 2rem;
-  border-bottom: 3px solid var(--font-color);
-  border-top: 3px solid var(--font-color);
+  border-bottom: 3px solid var(--base-content-color);
+  border-top: 3px solid var(--base-content-color);
   padding-bottom: 1rem;
   padding-top: 1rem;
   margin: 0;
