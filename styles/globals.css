@@ -37,13 +37,13 @@
 
 [data-theme="light"] {
   /* PRIMARY COLOR */
-  --primary-color: #005ea8;
-  --primary-focus-color: #004070;
-  --primary-content-color: ;
+  --primary-color: #005fa8;
+  --primary-focus-color: #007cdb;
+  --primary-content-color: #222;
   /* SECONDARY COLOR */
-  --secondary-color: #0271c2;
-  --secondary-focus-color: ;
-  --secondary-content-color: ;
+  --secondary-color: #0071c2;
+  --secondary-focus-color: #008ff5;
+  --secondary-content-color: #222;
   /* ACCENT COLOR */
   --accent-color: ;
   --accent-focus-color: ;
