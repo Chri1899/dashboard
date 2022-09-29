@@ -121,7 +121,7 @@ ol {
 
 @media only screen and (width > 425px) and (width <= 768px) {
   .content-grid {
-    grid-template-columns: 1.25fr 1fr;
+    grid-template-columns: 1.26fr 1fr;
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0.5rem;
   }
