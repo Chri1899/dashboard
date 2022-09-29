@@ -7,12 +7,14 @@
     <title>Dashboard - Profil</title>
     <link rel="stylesheet" href="/styles/globals.css" />
     <link rel="stylesheet" href="/styles/header.module.css" />
-    <link rel="stylesheet" href="/styles/header.navigation.module.css" />
-    <link rel="stylesheet" href="/styles/profile.css" />
+    <link rel="stylesheet" href="/styles/navigation.module.css" />
+    <link rel="stylesheet" href="/styles/profile.module.css" />
     <script src="/scripts/profile-import.js" defer></script>
     <script src="/scripts/menuscript.js" async></script>
+    <script src="/scripts/cookies.js"></script>
+    <script src="/scripts/themes.js"></script>
   </head>
-  <body>
+  <body onload="setTheme(getCookie('theme'))">
     <nav id="navigation"></nav>
     <header id="header"></header>
     <main>
@@ -24,14 +26,14 @@
       <p>Email: test@mail.de</p>
       <p>Title: CEO</p>
       <p>Abteilung: Marketing</p>
-      <div>
+      <section>
         <h2>Accounts</h2>
         <ul>
           <li>Slack</li>
           <li>Absence.io</li>
           <li>GitHub</li>
         </ul>
-      </div>
+      </section>
     </main>
   </body>
 </html>

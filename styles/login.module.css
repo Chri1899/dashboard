@@ -12,12 +12,12 @@ body {
   width: 95%;
   max-width: 30rem;
   padding: 1rem;
-  background-color: var(--bg-color-dark);
+  background-color: var(--base-300-color);
   border-radius: 0.75rem;
 }
 
 h1 {
-  margin: 0 0 1rem;
+  margin-bottom: 1rem;
   text-align: center;
 }
 
@@ -42,15 +42,16 @@ button {
 
 button {
   font-size: 0.95rem;
+  color: var(--base-200-color);
   background-color: var(--primary-color);
 }
 
 hr {
   border: none;
-  border-top: 1px solid #878787;
+  border-top: 1px solid var(--base-100-color);
   margin: 1rem 0px;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: underline var(--primary-color) 2px;
 }

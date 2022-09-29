@@ -7,10 +7,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(var(--primary-color), var(--bg-color));
+  background: radial-gradient(var(--primary-color), var(--base-100-color));
   backdrop-filter: contrast(70%);
   border-radius: 1.3rem;
-  box-shadow: 3px 3px 3px 1px var(--bg-color-darker);
+  box-shadow: 3px 3px 3px 1px var(--base-200-color);
 }
 
 /* Style the list */
@@ -21,12 +21,12 @@
   width: 95%;
   display: flex;
   align-items: center;
-  border: 2px solid black;
+  border: 2px solid var(--base-300-color);
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
   border-radius: 1rem;
-  background-color: var(--bg-color);
+  background-color: var(--base-100-color);
 }
 
 /* Hide Scrollbar */
@@ -38,13 +38,10 @@
 /* Style the List items */
 
 .settings-item {
-  border-right: 2px solid black;
-  padding: 0.6rem;
+  border-right: 2px solid var(--base-300-color);
   transition: background-color 0.3s ease-in-out;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-grow: 1;
+  height: 100%;
 }
 
 .settings-item:hover {
@@ -54,8 +51,9 @@
 
 /* Icon Styling */
 
-.settings-icon {
-  margin: 0.2rem;
+.settings-item svg {
+  height: 1.75rem;
+  width: 1.75rem;
   transition: fill 0.5s ease-in-out;
 }
 
@@ -68,15 +66,18 @@
 /* Active Button */
 
 .active {
+  color: var(--base-100-color);
   background-color: var(--primary-color);
-}
-
-.active svg {
-  fill: var(--bg-color);
 }
 
 /* Button Styling */
 
 .settings-item button {
-  padding: 0.6rem;
+  width: 100%;
+  height: 100%;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
 }

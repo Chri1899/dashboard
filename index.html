@@ -7,18 +7,24 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="/styles/globals.css" />
     <link rel="stylesheet" href="/styles/header.module.css" />
-    <link rel="stylesheet" href="/styles/header.navigation.module.css" />
+    <link rel="stylesheet" href="/styles/navigation.module.css" />
     <link rel="stylesheet" href="/styles/progress.module.css" />
-    <link rel="stylesheet" href="/styles/timeline.css" />
+    <link rel="stylesheet" href="/styles/timeline.module.css" />
     <script src="/scripts/menuscript.js" async></script>
     <script src="/scripts/import.js" defer></script>
+    <script src="/scripts/cookies.js"></script>
+    <script src="/scripts/themes.js"></script>
   </head>
-  <body>
+  <body onload="setTheme(getCookie('theme'))">
     <nav id="navigation"></nav>
     <header id="header"></header>
     <main class="content-grid">
       <section id="timeline" class="card"></section>
       <section id="progress" class="card"></section>
+      <div>
+        <button onclick="setTheme('light')">Switch to light theme</button>
+        <button onclick="setTheme('dark')">Switch to dark theme</button>
+      </div>
     </main>
   </body>
 </html>
