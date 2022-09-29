@@ -1,3 +1,4 @@
+/* TODO: add more color schemes*/
 :root {
   /* PRIMARY COLOR */
   --primary-color: #005fa8;
@@ -201,8 +202,9 @@ ol {
 
 @media only screen and (width > 425px) {
   .content-grid {
-    grid-template-columns: 1.26fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 1rem;
   }
 
   #timeline {
