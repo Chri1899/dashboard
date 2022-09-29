@@ -119,7 +119,9 @@ ol {
   list-style-type: none;
 }
 
-@media only screen and (width > 425px) and (width <= 768px) {
+/* Styling for Tablets */
+
+@media only screen and (width > 425px) {
   .content-grid {
     grid-template-columns: 1.26fr 1fr;
     grid-template-rows: repeat(2, 1fr);
@@ -137,4 +139,19 @@ ol {
   .card {
     min-height: 100%;
   }
+}
+
+/* Styling for small screens and laptops */
+
+@media only screen and (width > 769) {
+}
+
+/* Styling for Desktops and large screens */
+
+@media only screen and (width > 1025) {
+}
+
+/* Styling for Extra large screens and TVs */
+
+@media only screen and (width > 1201) {
 }
