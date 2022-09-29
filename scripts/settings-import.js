@@ -22,7 +22,7 @@ fetch("/components/settings/pageslider.html")
   });
 
 const settingsPage = document.querySelector("#settingsPage");
-fetch("/components/settings/accountsettings.html")
+fetch("/components/settings/account.html")
   .then((res) => res.text())
   .then((data) => {
     settingsPage.innerHTML = data;
