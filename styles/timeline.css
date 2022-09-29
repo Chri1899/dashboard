@@ -1,59 +1,42 @@
-/* List Styling */
-.timeline-list {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column-reverse;
-  gap: 0.5rem;
-  overflow-y: scroll;
-  overflow-wrap: normal;
-}
-
-/* Event Item Styling */
-.timeline-event {
-  display: flex;
-  flex-direction: row;
-  gap: 0.6rem;
-  height: 5em;
-}
-
-/* Styling for last item in list */
-.timeline-event:last-of-type {
-  margin-top: 0.2rem; /* Displays the last element fully (otherwise, border was cut off) */
-}
-
-/* Profile Icon Container/Link */
-.timeline-event .profile-link {
-  display: flex;
-  margin-left: 0.5rem;
-  user-select: none;
-}
-
-/* Profile Icon */
-.timeline-event .profile-icon {
-  width: 3rem;
-  height: 3rem;
-  align-self: center;
-}
-
-/* Event Description/Time Container */
-.timeline-event .span-container {
-  justify-self: flex-end;
+.timeline {
   display: flex;
   flex-direction: column;
-  padding: 0.4rem;
-  font-size: 0.7rem;
-  line-height: 0.9rem;
+  overflow-y: scroll;
+  max-height: 100%;
+  gap: 0.5rem;
 }
 
-/* Event Description */
-.timeline-event .span-container .event-description {
-  flex: 1;
+.event-item {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.5fr;
+  grid-template-rows: 1.5fr 0.5fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  padding: 0.5rem 0.75rem;
 }
 
-/* Event Time */
-.span-container .event-time {
-  align-self: flex-end;
-  justify-self: flex-end;
-  font-size: 0.6rem;
+.event-item > .link-container {
+  grid-area: 1 / 1 / 3 / 2;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+.event-item > .event-description {
+  grid-area: 1 / 2 / 2 / 4;
+}
+.event-item > .event-time {
+  grid-area: 2 / 2 / 3 / 4;
+  font-size: small;
+}
+
+.profile-link {
+  display: inline-block;
+  max-height: fit-content;
+  max-width: fit-content;
+}
+
+.profile-icon {
+  display: block;
+  height: 3rem;
+  width: 3rem;
 }
