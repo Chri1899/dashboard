@@ -48,7 +48,7 @@ button {
 
 hr {
   border: none;
-  border-top: 1px solid #878787;
+  border-top: 1px solid var(--base-100-color);
   margin: 1rem 0px;
 }
 
