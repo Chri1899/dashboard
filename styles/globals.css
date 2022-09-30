@@ -214,11 +214,21 @@ ol {
   .content-grid {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  #timeline {
+    grid-column: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
 }
 
 /* Styling for Extra large screens and TVs */
 @media only screen and (width > 1200px) {
   .content-grid {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  #timeline {
+    grid-column: 4;
   }
 }
