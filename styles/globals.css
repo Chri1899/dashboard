@@ -22,7 +22,7 @@
   --base-content-color: #f8f8f8;
   /* INFO COLOR */
   --info-color: #0000ff;
-  --info-content-color: #000;
+  --info-content-color: #fff;
   /* SUCCESS COLOR*/
   --success-color: #7ab51d;
   --success-content-color: #000;
@@ -58,7 +58,7 @@
   --base-content-color: #222;
   /* INFO COLOR */
   --info-color: #0000ff;
-  --info-content-color: #000;
+  --info-content-color: #fff;
   /* SUCCESS COLOR*/
   --success-color: #7ab51d;
   --success-content-color: #000;
