@@ -1,8 +1,12 @@
+:root {
+  --header-height: 4rem;
+}
+
 #header {
   position: sticky;
   top: 0;
   z-index: 10;
-  height: 4rem;
+  height: var(--header-height);
   display: flex;
   align-items: center;
   justify-content: space-between;

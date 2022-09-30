@@ -231,3 +231,13 @@ ol {
     grid-column: 4;
   }
 }
+
+/* Navigation Positioning */
+
+#navigation {
+  height: calc(100vh - var(--header-height));
+  position: absolute;
+  width: fit-content;
+  top: var(--header-height);
+  z-index: 10000;
+}
