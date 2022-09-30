@@ -1,4 +1,3 @@
-/* TODO: add more color schemes*/
 :root {
   /* PRIMARY COLOR */
   --primary-color: #005fa8;
@@ -23,7 +22,7 @@
   --base-content-color: #f8f8f8;
   /* INFO COLOR */
   --info-color: #0000ff;
-  --info-content-color: #000;
+  --info-content-color: #fff;
   /* SUCCESS COLOR*/
   --success-color: #7ab51d;
   --success-content-color: #000;
@@ -59,7 +58,7 @@
   --base-content-color: #222;
   /* INFO COLOR */
   --info-color: #0000ff;
-  --info-content-color: #000;
+  --info-content-color: #fff;
   /* SUCCESS COLOR*/
   --success-color: #7ab51d;
   --success-content-color: #000;
@@ -128,10 +127,6 @@ a {
   gap: 0.5rem;
 }
 
-#timeline {
-  grid-area: 1 / 1 / 2 / 2;
-}
-
 /* General Stylings */
 
 button {
@@ -195,16 +190,14 @@ ol {
 }
 
 /* Styling for Tablets */
-
 @media only screen and (width > 480px) {
   .content-grid {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 1rem;
+    gap: 1rem;
   }
 
   #timeline {
-    grid-area: 1/ 1/ 3/ 2;
+    grid-row: span 2;
   }
 
   .card {
@@ -213,27 +206,28 @@ ol {
 }
 
 /* Styling for small screens and laptops */
-
 @media only screen and (width > 768px) {
 }
 
 /* Styling for Desktops and large screens */
-
 @media only screen and (width > 1024px) {
   .content-grid {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    height: 90vh;
   }
 
   #timeline {
-    grid-area: 1 / 3 / 3 / 3;
+    grid-column: 3;
+    grid-row: 1 / span 2;
   }
-
-  /* Not viable right now */
 }
 
 /* Styling for Extra large screens and TVs */
-
 @media only screen and (width > 1200px) {
+  .content-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  #timeline {
+    grid-column: 4;
+  }
 }
