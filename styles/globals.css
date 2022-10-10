@@ -167,6 +167,10 @@ select:focus {
   border-radius: 0.75rem;
 }
 
+.card > ul {
+  height: 100%;
+}
+
 .card-item {
   background-color: var(--base-200-color);
   border: 1px solid var(--secondary-color);
