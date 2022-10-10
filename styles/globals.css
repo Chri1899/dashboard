@@ -175,6 +175,11 @@ select:focus {
   background-color: var(--base-200-color);
   border: 1px solid var(--secondary-color);
   border-radius: 0.75rem;
+  padding: 0.5rem;
+}
+
+article.card-item {
+  height: 100%;
 }
 
 h1,
