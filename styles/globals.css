@@ -178,3 +178,57 @@ ol {
   padding: 0;
   list-style-type: none;
 }
+
+/* Navigation Positioning */
+
+#navigation {
+  height: calc(100vh - var(--header-height));
+  position: absolute;
+  width: fit-content;
+  top: var(--header-height);
+  z-index: 10000;
+  visibility: hidden;
+}
+
+/* Styling for Tablets */
+@media only screen and (width > 480px) {
+  .content-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  #timeline {
+    grid-row: span 2;
+  }
+
+  .card {
+    min-height: 100%;
+  }
+}
+
+/* Styling for small screens and laptops */
+@media only screen and (width > 768px) {
+}
+
+/* Styling for Desktops and large screens */
+@media only screen and (width > 1024px) {
+  .content-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #timeline {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+  }
+}
+
+/* Styling for Extra large screens and TVs */
+@media only screen and (width > 1200px) {
+  .content-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  #timeline {
+    grid-column: 4;
+  }
+}

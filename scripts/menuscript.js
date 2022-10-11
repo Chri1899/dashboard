@@ -1,8 +1,10 @@
 // function for showing and hiding the menu
-function openMenu() {
-  document.getElementById("navigation").style.display = "block";
-}
-
-function closeMenu() {
-  document.getElementById("navigation").style.display = "none";
+function showMenu() {
+  if (document.getElementById("navigation").style.visibility === "visible") {
+    document.getElementById("navigation").style.visibility = "hidden";
+    document.querySelector("body").style.overflowY = "auto";
+  } else {
+    document.getElementById("navigation").style.visibility = "visible";
+    document.querySelector("body").style.overflowY = "hidden";
+  }
 }

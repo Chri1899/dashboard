@@ -1,218 +1,69 @@
-/* Fullscreen Background and Positioning */
-
-#navigation {
-  display: none;
-}
-
-/* Fullscreen Container Styling */
-
-.navigation-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 20;
-  backdrop-filter: blur(0.2rem);
-}
-
-/* Closing Section Container */
-
-.closing-section {
-  display: flex;
-  width: 90%;
-  height: 5%;
-  margin: 1rem;
-  justify-content: space-between;
-}
-
-.closing-section > h1 {
-  margin: 0;
-  text-align: center;
-}
-
-/* Navigation Element Container */
-
-.section-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.navigation-menu {
   height: 100%;
-  width: 100%;
-  margin: 0 auto;
-  background-color: var(--base-100-color);
-  opacity: 0.9;
-  color: var(--base-content-color);
-}
-
-/* Container for Sections and SVGs */
-
-.navigation-section-container {
-  height: 100%;
-  width: 100%;
+  background-color: var(--base-200-color);
+  border-radius: 0 2rem 2rem 0;
   display: flex;
-  justify-content: space-between;
 }
-/* Section Elements */
 
-.navigation-element {
+.nav-icons-list,
+.nav-content-list {
+  padding: 2rem 0;
+}
+
+.nav-icons-list {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  padding-left: 1rem;
+  width: 4rem;
+  background-color: var(--primary-color);
+  border-radius: 0 1rem 1rem 0;
+}
+
+.nav-icon {
+  height: calc(100% / 3);
+  width: fit-content;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  height: 30%;
-  margin: 0;
 }
 
-/* Titles */
+.nav-icon svg {
+  height: 32px;
+  width: 32px;
+  fill: currentColor;
+}
 
-.navigation-title {
+#logout {
+  margin-top: auto;
+}
+
+.nav-content-list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: fit-content;
+  padding-left: 4rem;
+  padding-right: 2rem;
+}
+
+.nav-item-section {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% / 3);
+}
+
+.nav-item-title {
+  height: 32px;
+  display: flex;
+  justify-content: flex-start;
+  line-height: 2rem;
   font-size: 2rem;
-  border-bottom: 3px solid var(--base-content-color);
-  border-top: 3px solid var(--base-content-color);
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-  margin: 0;
 }
 
-/* Overwrite Border Styling of H2 */
-
-.first-title {
-  border-top: none;
+.nav-item {
+  margin: 1rem 0;
 }
-
-/* Width, alignment of title and the ul */
-
-.navigation-title,
-.navigation-list {
-  width: 100%;
-  text-align: center;
-}
-
-/* UL Styling */
-
-.navigation-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: 100%;
-  padding: 1rem;
-}
-
-/* List Items Styling */
-
-.navigation-item {
-  display: flex;
-  align-items: center;
-  height: 33%;
-}
-
-/* Link Styling */
-
-.navigation-item a {
-  text-decoration: none;
-  color: inherit;
-  font-size: inherit;
-}
-
-/* Hide SVG */
-.svgs {
-  display: none;
-}
-
-/* Media Query for Desktops */
 
 @media only screen and (width > 1024px) {
-  @keyframes sections {
-    0% {
-      opacity: 0;
-      transform: rotateY(-70deg);
-      transform-origin: left;
-    }
-
-    100% {
-      opacity: 1;
-      transform: rotateY(0);
-      transform-origin: left;
-    }
-  }
-
-  @keyframes navigation-item {
-    0% {
-      opacity: 0;
-      transform: translateX(-250px) rotate(-200deg);
-    }
-
-    100% {
-      opacity: 1;
-      transform: translateX(0) rotate(0deg);
-    }
-  }
-
-  @keyframes navigation {
-    0% {
-      opacity: 0;
-      transform: rotateX(-100deg);
-      transform-origin: top;
-    }
-
-    100% {
-      opacity: 1;
-      transform: rotateX(0deg);
-      transform-origin: top;
-    }
-  }
-  .closing-section {
-    display: none;
-  }
-
-  .section-wrapper {
-    display: none;
-    width: 40vw;
-  }
-
-  .navigation-section-container {
-    height: 90%;
-  }
-
-  .svgs {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    width: 4rem;
-    gap: 30%;
-    padding: 1rem 0;
-  }
-
-  .navigation-container {
-    top: 4rem;
-    width: fit-content;
-    animation: navigation 1s ease-out 0s 1 normal forwards;
-  }
-
-  .navigation-section-container:hover .section-wrapper {
-    display: flex;
-    animation: sections 1s ease-out 0s 1 normal forwards;
-  }
-
-  .svgs > * {
-    display: block;
-    animation: navigation-item 1s ease-out 0s 1 normal forwards;
-  }
-
-  #closingButton {
-    display: block;
-    height: 10%px;
-    width: 64px;
-    align-self: flex-start;
-  }
-
-  #closingButton svg {
-    height: 48px;
-    width: 48px;
-  }
 }
