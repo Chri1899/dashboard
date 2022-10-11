@@ -65,5 +65,16 @@
   margin: 1rem 0;
 }
 
-@media only screen and (width > 1024px) {
+@media only screen and (width > 1023px) {
+  .nav-content-list {
+    display: none;
+  }
+
+  .nav-icons-list:hover + .nav-content-list {
+    display: block;
+  }
+
+  .nav-icons-list:hover + .index-grid {
+    overflow-y: hidden;
+  }
 }

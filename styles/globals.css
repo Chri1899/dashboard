@@ -191,7 +191,7 @@ ol {
 }
 
 /* Styling for Tablets */
-@media only screen and (width > 480px) {
+@media only screen and (width > 479px) {
   .content-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
@@ -207,11 +207,11 @@ ol {
 }
 
 /* Styling for small screens and laptops */
-@media only screen and (width > 768px) {
+@media only screen and (width > 767px) {
 }
 
 /* Styling for Desktops and large screens */
-@media only screen and (width > 1024px) {
+@media only screen and (width > 1023px) {
   .content-grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -220,10 +220,16 @@ ol {
     grid-column: 3;
     grid-row: 1 / span 2;
   }
+
+  #navigation {
+    visibility: visible;
+    z-index: auto;
+    position: static;
+  }
 }
 
 /* Styling for Extra large screens and TVs */
-@media only screen and (width > 1200px) {
+@media only screen and (width > 1199px) {
   .content-grid {
     grid-template-columns: repeat(4, 1fr);
   }
