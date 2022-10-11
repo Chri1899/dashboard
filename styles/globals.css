@@ -240,4 +240,7 @@ ol {
   width: fit-content;
   top: var(--header-height);
   z-index: 10000;
+  visibility: hidden;
+  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
 }
