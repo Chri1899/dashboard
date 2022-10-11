@@ -189,6 +189,17 @@ ol {
   list-style-type: none;
 }
 
+/* Navigation Positioning */
+
+#navigation {
+  height: calc(100vh - var(--header-height));
+  position: absolute;
+  width: fit-content;
+  top: var(--header-height);
+  z-index: 10000;
+  visibility: hidden;
+}
+
 /* Styling for Tablets */
 @media only screen and (width > 480px) {
   .content-grid {
@@ -230,17 +241,4 @@ ol {
   #timeline {
     grid-column: 4;
   }
-}
-
-/* Navigation Positioning */
-
-#navigation {
-  height: calc(100vh - var(--header-height));
-  position: absolute;
-  width: fit-content;
-  top: var(--header-height);
-  z-index: 10000;
-  visibility: hidden;
-  transition: all 0.2s ease-out;
-  -webkit-transition: all 0.2s ease-out;
 }
