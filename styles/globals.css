@@ -119,16 +119,6 @@ a {
   text-decoration: none;
 }
 
-/* Main Content Grid */
-
-.content-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0.5rem;
-}
-
-/* General Stylings */
-
 button {
   padding: 0;
   color: inherit;
